@@ -1,7 +1,7 @@
 from PIL import Image
 
 # Buka citra RGB
-rgb_image = Image.open("UTS-PCD/Images/RGB.jpg")
+rgb_image = Image.open("Images/RGB.jpg")
 
 # Konversi citra RGB menjadi citra grayscale
 gray_image = Image.new("L", rgb_image.size)  # Buat citra baru dengan mode "L" (grayscale)
@@ -14,7 +14,7 @@ for x in range(rgb_image.width):
         gray_image.putpixel((x, y), grayscale_value)
 
 # Simpan citra grayscale
-output_path = "UTS-PCD/Output/grayscale_output.png"
+output_path = "Output/grayscale_output.png"
 gray_image.save(output_path)
 
 # Cetak pesan sukses jika citra berhasil disimpan

@@ -79,4 +79,4 @@ def main(image_path, G, P):
 # Ganti 'your_image_path' dengan path gambar yang ingin diproses
 G = 1.5  # Koefisien penguatan kontras
 P = 128  # Nilai pusat pengontrasan
-main('UTS-PCD/Images/image-1_1.jpg', G, P)  # Ganti dengan path gambar Anda
+main('Images/image-1_1.jpg', G, P)  # Ganti dengan path gambar Anda

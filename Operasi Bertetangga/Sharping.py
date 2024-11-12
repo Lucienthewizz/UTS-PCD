@@ -31,13 +31,13 @@ def sharpen_image(image):
 
 def main():
     # Baca citra
-    image = cv2.imread('UTS-PCD/Images/bulan.jpg', cv2.IMREAD_GRAYSCALE)
+    image = cv2.imread('Images/bulan.jpg', cv2.IMREAD_GRAYSCALE)
     
     # Sharpen citra
     sharpened_image = sharpen_image(image)
 
     # Simpan citra hasil sharpening sebagai file baru
-    cv2.imwrite('UTS-PCD/Output/Operasi-Bertetangga/hasil_penajaman.jpg', sharpened_image)
+    cv2.imwrite('Output/Operasi-Bertetangga/hasil_penajaman.jpg', sharpened_image)
     
     # Tampilkan panel figure
     plt.figure(figsize=(10, 5))

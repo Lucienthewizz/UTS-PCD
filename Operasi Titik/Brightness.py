@@ -77,6 +77,6 @@ def main(image_path, c):
     plt.show()
 
 # Ganti 'your_image_path' dengan path gambar yang ingin diproses
-main('UTS-PCD/Images/image-1_1.jpg', c=50)  # Ganti dengan path gambar Anda dan nilai c yang diinginkan
+main('Images/image-1_1.jpg', c=50)  # Ganti dengan path gambar Anda dan nilai c yang diinginkan
 
 

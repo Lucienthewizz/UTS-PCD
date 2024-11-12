@@ -39,7 +39,7 @@ else:
     axs[1].axis('off')
     
     # Simpan gambar hasil flip horizontal
-    cv2.imwrite("report/mirror_image.png", mirrored_image)
+    cv2.imwrite("Output/mirror_image.png", mirrored_image)
 
     # Tampilkan figure dengan subplot-subplotnya
     plt.show()

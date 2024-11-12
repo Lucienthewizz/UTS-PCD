@@ -3,7 +3,7 @@ import cv2
 import matplotlib.pyplot as plt
 
 # Membaca citra input dalam grayscale
-img = cv2.imread("UTS-PCD/Images/bulan.jpg", cv2.IMREAD_GRAYSCALE)
+img = cv2.imread("Images/bulan.jpg", cv2.IMREAD_GRAYSCALE)
 
 # Dimensi citra
 height, width = img.shape
@@ -29,7 +29,7 @@ for i in range(1, height - 1):
 output = np.clip(output, 0, 255).astype(np.uint8)
 
 # Menyimpan hasil citra dengan efek emboss
-plt.imsave("UTS-PCD/Output/Operasi-Bertetangga/hasil_timbul.jpg", output, cmap="gray")
+plt.imsave("Output/Operasi-Bertetangga/hasil_timbul.jpg", output, cmap="gray")
 
 # Menampilkan perbandingan gambar asli dan setelah emboss
 plt.figure(figsize=(10, 5))

@@ -33,14 +33,14 @@ def convolution_median(image):
     return result
 
 # Membaca gambar
-image_path = 'UTS-PCD/Images/albert.jpg'
+image_path = 'Images/albert.jpg'
 original_image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
 # Melakukan konvolusi dengan metode median
 result_image = convolution_median(original_image)
 
 # Menyimpan hasil konvolusi ke dalam file gambar
-output_path = 'UTS-PCD/Output/Operasi-Bertetangga/hasil_noise_reduction.jpg'
+output_path = 'Output/Operasi-Bertetangga/hasil_noise_reduction.jpg'
 cv2.imwrite(output_path, result_image)
 
 # Menampilkan perbandingan gambar asli dan hasil konvolusi

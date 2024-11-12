@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import cv2
 
 # Membaca citra input dari file
-img = cv2.imread("UTS-PCD/Images/berasREAL.jpg", cv2.IMREAD_GRAYSCALE)
+img = cv2.imread("Images/berasREAL.jpg", cv2.IMREAD_GRAYSCALE)
 
 # Operator Roberts
 kernel_x = np.array([[1, 0], [0, -1]])
@@ -26,7 +26,7 @@ for i in range(output.shape[0]):
         output[i, j] = max(output[i, j], 0)
 
 # Menyimpan citra tepi ke file baru
-plt.imsave("UTS-PCD/Output/Operasi-Bertetangga/hasil_tepi (Robert).jpg", output, cmap="gray")
+plt.imsave("Output/Operasi-Bertetangga/hasil_tepi (Robert).jpg", output, cmap="gray")
 
 # Membuat histogram untuk citra asli dan hasil
 plt.figure(figsize=(10, 5))

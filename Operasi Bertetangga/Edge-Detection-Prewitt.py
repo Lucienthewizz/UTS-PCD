@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import cv2
 
 # Membaca citra input dari file
-img = cv2.imread("UTS-PCD/Images/berasREAL.jpg", cv2.IMREAD_GRAYSCALE)
+img = cv2.imread("Images/berasREAL.jpg", cv2.IMREAD_GRAYSCALE)
 
 # Pastikan gambar berhasil dibaca
 if img is None:
@@ -30,7 +30,7 @@ else:
     output = np.clip(output, 0, 255).astype(np.uint8)
 
     # Menyimpan citra hasil ke file
-    plt.imsave("UTS-PCD/Output/Operasi-Bertetangga/hasil_tepi (Prewitt).jpg", output, cmap="gray")
+    plt.imsave("Output/Operasi-Bertetangga/hasil_tepi (Prewitt).jpg", output, cmap="gray")
     print("Proses deteksi tepi selesai dan hasil disimpan.")
 
     # Perbandingan gambar asli dan setelah

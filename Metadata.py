@@ -1,7 +1,7 @@
 from PIL import Image, ExifTags
 
 # Path ke gambar
-imagename = "UTS-PCD/Images/RGB.jpg"
+imagename = "Images/RGB.jpg"
 
 # Membaca data gambar menggunakan PIL
 image = Image.open(imagename)

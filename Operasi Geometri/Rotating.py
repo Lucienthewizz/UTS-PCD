@@ -1,7 +1,7 @@
 from PIL import Image
 
 # Load gambar asli
-gambar_asli = Image.open("UTS-PCD/Images/RGB.jpg")
+gambar_asli = Image.open("Images/RGB.jpg")
 
 # Konversi gambar asli ke mode "RGB"
 gambar_asli = gambar_asli.convert("RGB")
@@ -54,9 +54,9 @@ print(f"Koordinat asli dari posisi (0,0) pada gambar rotasi 180 derajat: {koordi
 print(f"Koordinat asli dari posisi (0,0) pada gambar rotasi 270 derajat: {koordinat_asli_setelah_rotasi_270}")
 
 # Menyimpan gambar hasil rotasi
-gambar_rotasi_90.save("UTS-PCD/Output/rotasi90.png")
-gambar_rotasi_180.save("UTS-PCD/Output/rotasi180.png")
-gambar_rotasi_270.save("UTS-PCD/Output/rotasi270.png")
+gambar_rotasi_90.save("Output/rotasi90.png")
+gambar_rotasi_180.save("Output/rotasi180.png")
+gambar_rotasi_270.save("Output/rotasi270.png")
 print("Gambar rotasi berhasil disimpan")
 
 # Komparasi koordinat dari gambar asli dan yang sudah dirotate

@@ -1,8 +1,8 @@
 import cv2
 
 # Memuat gambar (ganti 'Output/rotas180.png' dengan path gambar yang sesuai)
-image_path = 'UTS-PCD/Output/rotas180.png'
-output_file = 'UTS-PCD/Output/intens_RGB_180.txt'  # Tentukan nama file output
+image_path = 'Output/rotas180.png'
+output_file = 'Output/intens_RGB_180.txt'  # Tentukan nama file output
 
 # Membaca gambar menggunakan OpenCV
 image = cv2.imread(image_path)

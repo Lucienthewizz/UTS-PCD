@@ -31,7 +31,7 @@ def main():
             smoothed_image[i, j] = int(smoothed_pixel)
     
     # Simpan citra hasil smoothing sebagai file baru
-    cv2.imwrite('UTS-PCD/Output/Operasi-Bertetangga/hasil_penghalusan.jpg', smoothed_image)
+    cv2.imwrite('Output/Operasi-Bertetangga/hasil_penghalusan.jpg', smoothed_image)
     
     # Tampilkan citra asli dan hasilnya
     plt.figure(figsize=(10, 5))
